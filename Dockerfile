@@ -16,11 +16,11 @@ LABEL maintainer="myname@somecompany.com"
 
 #
 # Update the image to the latest packages
-RUN apt-get update && apt-get upgrade -y
+RUN sudo apt-get update
 
 #
 # Install NGINX to test.
-RUN apt-get install nginx -y
+RUN sudo apt-get install nginx -y
 
 #
 # Expose port 80
